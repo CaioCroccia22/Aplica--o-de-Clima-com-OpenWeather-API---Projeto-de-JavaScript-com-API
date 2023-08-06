@@ -12,6 +12,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <h2>Clima agora</h2>
+    <!--Div que vai realizar a pesquisa de cidade-->
+    <div class="container">
+        <div class="form">
+            <h3>Confira o clima de uma cidade:</h3>
+            <!--Div usada para trabalhar com o flex container e alinhar os botões-->
+            <div class="form-input-container">
+                <input type="text" placeholder="Digite o nome da cidade" id="city-input">
+                <button id="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+        <div id="weather-data">
+           <h2>
+            <i class="fa-solid fa-location-dot"></i>
+            <span id="city">Santos</span>
+            <img src="" alt="" id="country" />
+        </h2> 
+        </div>
+    </div>
 </body>
 </html>
