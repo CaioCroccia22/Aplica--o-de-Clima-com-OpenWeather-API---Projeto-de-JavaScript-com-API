@@ -38,7 +38,7 @@ const showWeatherData = async (city) => {
     cityElement.innerText = data.name;
     //ParseInt - converte a string em um número inteiro
     tempElement.innerText = data.parseInt(data.main.temp)
-    
+    oi
 }
 
 
