@@ -7,7 +7,7 @@ const apiCountryUrl = "https://www.countryflagicons.com/SHINY/64/png"
 const cityInput = document.querySelector("#city-input");
 const searchBtn = document.querySelector("#search");
 
-const cityElement = document.querySelector("#city-input");
+const cityElement = document.querySelector("#city");
 const tempElement = document.querySelector("#temperature-span");
 const descElement = document.querySelector('#description');
 const weatherIconElement = document.querySelector('#weather-icon');
@@ -36,6 +36,9 @@ const showWeatherData = async (city) => {
     const data = await getWeatherData(city);
 
     cityElement.innerText = data.name;
+    //ParseInt - converte a string em um número inteiro
+    tempElement.innerText = data.parseInt(data.main.temp)
+    
 }
 
 
