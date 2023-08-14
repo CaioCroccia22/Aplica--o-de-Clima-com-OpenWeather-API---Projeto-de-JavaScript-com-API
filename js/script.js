@@ -14,6 +14,7 @@ const weatherIconElement = document.querySelector('#weather-icon');
 const countryElement = document.querySelector('#country');
 const humidityElement = document.querySelector('#humidity span');
 const windElement = document.querySelector('#wind span');
+const weatherContainer = document.querySelector("#weather-data");
 
 //Funções
 //Consulta dos dados da API
@@ -47,7 +48,7 @@ const showWeatherData = async (city) => {
     weatherContainer.classList.remove("hide");
 
 
-    const weatherContainer = document.querySelector("#weather-data");
+    
     
 };
 
